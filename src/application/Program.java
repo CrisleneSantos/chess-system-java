@@ -52,6 +52,7 @@ public class Program {
 					captured.add(capturedPiece);
 				}
 			}
+			
 			catch(ChessException e) {
 				System.out.println(e.getMessage());
 				sc.nextLine();
@@ -61,7 +62,7 @@ public class Program {
 				sc.nextLine();
 			}
 				
-		}
+			}
+			
 	}
-
 }
