@@ -30,7 +30,7 @@ public class Program {
 		List<ChessPiece> captured = new ArrayList();
  		//UI.printBoard(chessMatch.getPieces());
 		
-		while(true) { //aula 189
+		while(!chessMatch.getCheckMate()) { //aula 189
 			try {
 				UI.clearScreen();
 				UI.printMatch(chessMatch, captured);
@@ -63,6 +63,8 @@ public class Program {
 			}
 				
 			}
+		UI.clearScreen();	
+		UI.printMatch(chessMatch, captured);
 			
 	}
 }
